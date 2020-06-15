@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Numeros</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+                var num=parseInt(prompt("Ingresa la cantidad de números que quieres sumar: "));
+                sumas(num);
+
+                function sumas (num){
+                    var total=0;
+                    for(var i=1; i <= num; i++){
+                        var n = parseInt(prompt("Ingresa el numero"));
+                        if(n>0){
+                            total=total+n;
+                        }
+                        else{
+                            alert("El número no es mayor a 0");
+                        }
+                        alert("La suma de los numeros es: "+total);
+                    }
+                }
+
+            </script>
+  </body>
+</html>
